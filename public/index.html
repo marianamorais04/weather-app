@@ -27,17 +27,128 @@
     <title>React App</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <div class="all">
+      <div class="container">
+        <div id="root"></div>
+        <div class="icons">
+          <img
+            src="/images/refresh.png"
+            alt="refresh icon"
+            width="25"
+            height="25"
+          />
+          <img
+            src="/images/share.png"
+            alt="share icon"
+            width="25"
+            height="25"
+          />
+        </div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+        <form class="mb-3" id="searchCity">
+          <input
+            type="text"
+            class="form-control"
+            id="exampleCity"
+            aria-describedby="cityHelp"
+            placeholder="Enter New City"
+            autocomplete="off"
+          />
+          <button>
+            <img
+              src="/images/search.png"
+              alt="sun icon"
+              id="exampleCity"
+              width="25"
+              height="25"
+              value="search-text-button"
+            />
+          </button>
+          <button type="button" id="currentCityButton">Current City</button>
+        </form>
+        <div class="infocity">
+          <span class="city" id="city">Amarante, Porto, Portugal </span>
+          <img src="images/addfav.png" alt="fav icon" width="25" height="25" />
+        </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+        <div class="infoday">
+          <span class="description" id="description">Clear</span>
+          <span class="day" id="currentDate">Sunday, 13h33</span>
+          <span class="update">updated 7 mins ago</span>
+        </div>
+
+        <div class="temperature">
+          <img
+            src="/images/sun.png"
+            alt="sun icon"
+            width="70"
+            height="70"
+            id="icon"
+          />
+          <span id="current">15</span>
+          <a id="celsius" class="active" href="#">°C</a> |
+          <a id="fahrenheit" href="#"> °F </a>
+          <ul>
+            <li>Precipitation: <span id="precipitation">96</span>%</li>
+            <li>Wind: <span id="wind">10</span>km/h</li>
+            <li>Humidity: <span id="humidity">73</span>%</li>
+          </ul>
+        </div>
+
+        <div class="moreinfo">
+          <span class="line">Temperature |</span>
+          <span> Precipitation</span>
+          <span> | Wind</span>
+        </div>
+
+        <div class="nextdays" id="forecast">
+          <span class="monday"
+            ><img src="/images/sun.png" alt="sun icon" width="50" height="50" />
+            MON
+            <br />
+            5º <strong>/ 19º</strong>
+          </span>
+          <span class="tuesday"
+            ><img src="/images/sun.png" alt="sun icon" width="50" height="50" />
+            TUE
+            <br />
+            7º <strong>/ 20º</strong>
+          </span>
+          <span class="wednesday"
+            ><img src="/images/sun.png" alt="sun icon" width="50" height="50" />
+            WED
+            <br />
+            6º <strong>/ 20º</strong>
+          </span>
+          <span class="thursday"
+            ><img
+              src="/images/cloud-sun.png"
+              alt="sun cloud icon"
+              width="60"
+              height="50"
+            />
+            THU
+            <br />
+            9º <strong>/ 18º</strong>
+          </span>
+          <span class="friday"
+            ><img src="/images/sun.png" alt="sun icon" width="50" height="50" />
+            FRI
+            <br />
+            5º <strong>/ 18º</strong>
+          </span>
+        </div>
+      </div>
+      <div class="link">
+        <a
+          href="https://github.com/marianamorais04/weather_app_SheCodesPlus_week7"
+        >
+          Open-source code</a
+        >
+        by Mariana Morais
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
   </body>
 </html>
